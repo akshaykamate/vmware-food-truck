@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+
+# Dockerfiles
+Dockerfile*
+.dockerignore
+
+# production
+.next
+
+#misc
+.DS_Store
+.git
+.gitignore
+README.md
+LICENSE
+.vscode
+npm-debug.log

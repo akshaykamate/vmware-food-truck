@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./cache",
+    "target": "ES2020",
+    "lib": [
+      "es6","ES2020"
+    ],
+    "types": [
+      "node",
+      "reflect-metadata"
+    ],
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "paths": {
+      "@Config/*": ["Config/*"],
+      "@Database/*": ["database/*"]
+    },
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "importHelpers": true,
+    "baseUrl": "src",
+    "importsNotUsedAsValues": "remove",
+    "sourceRoot": "./src",
+    "newLine": "lf",
+    "esModuleInterop": true,
+    "moduleResolution": "Node16",
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+}

@@ -1,0 +1,33 @@
+version: '3.6'
+
+services:
+    backend:
+        container_name: backend
+        image: food-truck-backend
+        build:
+            context: ./backend/
+        depends_on:
+            - pg
+        ports:
+            - 3001:3001
+    frontend:
+        container_name: frontend
+        image: food-truck-frontend
+        build:
+            context: ./frontend/
+        ports:
+            - 3000:3000
+    pg:
+        container_name: pg
+        image: postgres:14.1-alpine
+        restart: always
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - '5432:5432'
+        volumes:
+            - db:/var/lib/postgresql/data
+volumes:
+    db:
+        driver: local

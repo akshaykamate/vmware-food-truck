@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# production
+dist
+
+# Log files
+*.log
+
+#misc
+.DS_Store
+*.pem
+
+# cache
+cache
+
+#Postgres data
+data
+
+.env
